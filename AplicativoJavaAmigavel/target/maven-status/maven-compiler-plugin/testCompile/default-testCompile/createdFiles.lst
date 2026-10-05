@@ -1,0 +1,6 @@
+br\com\amigavel\tarefas\TaskRepositoryTest.class
+br\com\amigavel\tarefas\TaskTransferServiceTest.class
+br\com\amigavel\tarefas\TaskFrequencyTest.class
+br\com\amigavel\tarefas\TaskTemplateCatalogTest.class
+br\com\amigavel\tarefas\DeadlineProgressTest.class
+br\com\amigavel\tarefas\AuthServiceTest.class
