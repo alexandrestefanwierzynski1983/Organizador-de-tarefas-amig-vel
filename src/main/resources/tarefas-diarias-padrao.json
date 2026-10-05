@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "frequency": "DAILY",
+  "tasks": [
+    {
+      "title": "Ir ao banheiro",
+      "picture": "🚻",
+      "completed": false
+    },
+    {
+      "title": "Lavar as mãos",
+      "picture": "🧼",
+      "completed": false
+    },
+    {
+      "title": "Escovar os dentes",
+      "picture": "🪥",
+      "completed": false
+    },
+    {
+      "title": "Lavar o rosto",
+      "picture": "💧",
+      "completed": false
+    },
+    {
+      "title": "Tomar banho",
+      "picture": "🚿",
+      "completed": false
+    },
+    {
+      "title": "Vestir roupa limpa e confortável",
+      "picture": "👕",
+      "completed": false
+    },
+    {
+      "title": "Guardar a roupa suja no cesto",
+      "picture": "🧺",
+      "completed": false
+    },
+    {
+      "title": "Guardar os objetos usados no lugar combinado",
+      "picture": "📦",
+      "completed": false
+    },
+    {
+      "title": "Organizar a mochila ou bolsa",
+      "picture": "🎒",
+      "completed": false
+    },
+    {
+      "title": "Conferir os itens importantes para hoje",
+      "picture": "✅",
+      "completed": false
+    },
+    {
+      "title": "Organizar uma pequena área",
+      "picture": "🧹",
+      "completed": false
+    },
+    {
+      "title": "Arrumar a cama (opcional)",
+      "picture": "🛏️",
+      "completed": false
+    }
+  ]
+}

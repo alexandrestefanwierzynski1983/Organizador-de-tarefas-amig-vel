@@ -1,0 +1,15 @@
+target/
+*.class
+*.jar
+
+.idea/
+*.iml
+.vscode/
+
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
