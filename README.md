@@ -7,6 +7,39 @@ Aplicativo desktop JavaFX de lista de tarefas, pensado para manter a tela simple
 - Java 21
 - Maven 3.9+
 
+## Requisitos do produto
+
+### Funcionais
+
+- **RF-01 — Contas:** permitir criar conta e entrar com nome de usuário e senha.
+- **RF-02 — Proteção de acesso:** armazenar a senha como hash BCrypt e bloquear novas tentativas de login por 15 minutos após cinco senhas incorretas para a conta.
+- **RF-03 — Tarefas:** permitir adicionar, editar, excluir e marcar tarefas como concluídas, com recorrência diária, semanal, mensal ou única.
+- **RF-04 — Escolha de tarefas:** permitir escrever uma tarefa ou selecioná-la na galeria local de pictogramas; texto e figura podem ser personalizados.
+- **RF-05 — Sugestões iniciais:** oferecer tarefas básicas de higiene e organização a partir de `src/main/resources/tarefas-diarias-padrao.json`.
+- **RF-06 — Prazos:** permitir definir um prazo local para tarefa única e visualizar o tempo restante em um indicador circular, sem penalidade após o vencimento.
+- **RF-07 — Incentivos:** conceder XP por conclusão, mostrar nível e progresso semanal/mensal, e permitir personalizar uma meta de lazer.
+- **RF-08 — Transferência:** exportar e importar listas por arquivo protegido por senha. Transferir tarefas e seus dados associados, sem transferir identidade, credenciais ou progresso de gamificação.
+- **RF-09 — Exclusão de conta:** permitir que a pessoa confirme a exclusão da conta com sua senha, removendo também tarefas e progresso locais.
+
+### Não funcionais
+
+- **RNF-01 — Privacidade local:** manter os dados no dispositivo; o aplicativo não chama APIs nem envia tarefas ou dados de conta pela internet.
+- **RNF-02 — Proteção de dados:** criptografar títulos das tarefas no banco local e proteger arquivos de transferência com criptografia autenticada.
+- **RNF-03 — Experiência acolhedora:** usar linguagem gentil, opções visuais e ausência de penalidades por tarefas atrasadas ou reabertas.
+- **RNF-04 — Execução:** funcionar como aplicativo desktop JavaFX com Java 21 e Maven.
+
+## Histórias de usuário
+
+- **HU-01 — Acesso pessoal:** como pessoa usuária, quero criar uma conta e entrar com minha senha para manter minhas tarefas separadas das de outras contas neste dispositivo.
+- **HU-02 — Proteção contra tentativas:** como pessoa usuária, quero que o acesso seja temporariamente bloqueado após cinco senhas incorretas para reduzir tentativas repetidas de login.
+- **HU-03 — Organização da rotina:** como pessoa usuária, quero criar, alterar, concluir e excluir tarefas para organizar minhas atividades do meu jeito.
+- **HU-04 — Apoio visual:** como pessoa usuária, quero escolher entre escrever uma tarefa ou usar um pictograma, para identificar atividades de uma forma que funcione melhor para mim.
+- **HU-05 — Começar com sugestões:** como pessoa usuária, quero receber uma lista editável de tarefas básicas de higiene e organização para não precisar começar com uma tela vazia.
+- **HU-06 — Prazos sem pressão:** como pessoa usuária, quero definir um prazo para uma tarefa única e ver o tempo restante em um círculo, sem perder XP nem ser punida quando o prazo passar.
+- **HU-07 — Reconhecer progresso:** como pessoa usuária, quero ganhar XP, avançar de nível e acompanhar meu progresso para celebrar tarefas concluídas e escolher uma meta pessoal de lazer.
+- **HU-08 — Compartilhar uma lista:** como pessoa usuária, quero exportar e importar uma lista protegida por senha para transferir tarefas a outra conta sem compartilhar dados pessoais ou XP.
+- **HU-09 — Apagar meus dados:** como pessoa usuária, quero excluir minha conta após confirmar minha senha para remover permanentemente meus dados locais.
+
 ## Executar
 
 Na pasta do projeto:
